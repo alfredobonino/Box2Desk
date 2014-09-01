@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Box2Desk.exe" version="1.0.0.8" publicKeyToken="ca3e883cb2337c95" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Immagine.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Box2Desk" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Box2Desk.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opzioni manifesto Controllo account utente
+          Se si desidera modificare il livello di Controllo account utente di Windows, sostituire il 
+          nodo requestedExecutionLevel con uno dei seguenti.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Se si desidera utilizzare Virtualizzazione file system e registro di sistema per la 
+         compatibilità con le versioni precedenti, eliminare il nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Box2Desk.exe" size="104448">
+      <assemblyIdentity name="Box2Desk" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ysyc5kSEavWtI6VuZi2q+MOqVahMlpEkjcUG8drEhMc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it\Box2Desk.resources.dll" size="36352">
+      <assemblyIdentity name="Box2Desk.resources" version="1.0.0.0" language="it" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rDCmJEdf49D7jF6a+5VECLxBIpT45vIQZTPRISP6vUA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Box2Desk.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Immagine.ico" size="32038">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w5F6xLL2axKqx/U1JofEdfOhkf0XElu1saBkwuEG14o=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SILVANO-VIKTOR\BONINO" issuerKeyHash="fc3201a2268a463fc10a9896c10df7ae4595699a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>M6GYt7Iu3KHV1Pd+faBhrRy0eoNQiWavwQdkbTjASC8=</DigestValue></Reference></SignedInfo><SignatureValue>L8a/pQ2SKnkq3HwsVQrHqgrrGhYMFPG9i2YXYPtJPMzcenwJ/PbifC2cnSAkPRpJp9YtmSqX4obH+dXJa+iLxkcp1Uwg1g+XXWdwzLFDjV7lCP1CkpKrNvHLsVQ9mf5WQc0f69QjP9xt3PNv7gs55UYMRVilnyj834aFp8mIqVw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>o7nUJAtlL+9bEeG0pchpWUe8ifPP1UF7kxER5WmapLLcwPaJlDPBwN+bPimiotcXR045eka7t+uY/61r7CeI3XDmeLRp6AY9R2w2qOe3gpAqXDLYeMROqFZ/Au5umZrPNfz7IMekqJmevxMQZhQJkJOj/bN7vKFSzpx2OtTuPAU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2f48c0386d6407c1af668950837ab41cad61a07d7ef7d4d5a1dc2eb2b798a133" Description="" Url=""><as:assemblyIdentity name="Box2Desk.exe" version="1.0.0.8" publicKeyToken="ca3e883cb2337c95" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SILVANO-VIKTOR\BONINO</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>OLSPGHjV57vI2dSJzRZxwXyawVEdkr0Tekc7nzYCWCM=</DigestValue></Reference></SignedInfo><SignatureValue>JQVdHCda16JJqLyNhsmQlzaDnODUTsdM4Z2JYpe+DGvmA9zp20OuRYJ9prdovcjx+7ctdjND8rHMOk3fet0OK4EbcHvzxvUdVcgXHGsMcjvT7g8TbcqPrGhQlEHaZw8lYtQGcq194dbukyYGnV5sQ17EhIrWj0IA+VdXoRHFcuU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>o7nUJAtlL+9bEeG0pchpWUe8ifPP1UF7kxER5WmapLLcwPaJlDPBwN+bPimiotcXR045eka7t+uY/61r7CeI3XDmeLRp6AY9R2w2qOe3gpAqXDLYeMROqFZ/Au5umZrPNfz7IMekqJmevxMQZhQJkJOj/bN7vKFSzpx2OtTuPAU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQW39lO5XbxJpAtPS7d/p2pjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioAUwBJAEwAVgBBAE4ATwAtAFYASQBLAFQATwBSAFwAQgBPAE4ASQBOAE8wHhcNMTQwODI4MTIyODEwWhcNMTUwODI4MTgyODEwWjA1MTMwMQYDVQQDHioAUwBJAEwAVgBBAE4ATwAtAFYASQBLAFQATwBSAFwAQgBPAE4ASQBOAE8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKO51CQLZS/vWxHhtKXIaVlHvInzz9VBe5MREeVpmqSy3MD2iZQzwcDfmz4poqLXF0dOOXpGu7frmP+ta+wniN1w5ni0aegGPUdsNqjnt4KQKlwy2HjETqhWfwLubpmazzX8+yDHpKiZnr8TEGYUCZCTo/2ze7yhUs6cdjrU7jwFAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAbvgHmVQhB6fDjndNhwCkFdH0wZk91G5VVSUZHSlNFpKkwBjMNi0k46MdErLPOuTwFhpEipHvu/wywSnS6QBGSZleWHpvGWSOc/77aAQLfjAlXwB0RfP12cKYUgisShNH0KG/jPMvEDCVmK8tXbbe+Z0cAp/Jxph+Yur5F7qi2u8=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
